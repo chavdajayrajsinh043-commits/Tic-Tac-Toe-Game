@@ -27,7 +27,7 @@ body{
     margin: auto;
     background: linear-gradient(135deg,#4c29ea,#0a0a0a);
     border-radius: 15%;
-    box-shadow: 0px 4px 10px black;
+    box-shadow: 2px 4px 10px 1px black;
     padding: 3vmin 2vmin;
 }
 h1{
@@ -67,11 +67,11 @@ h2,h3{
     margin: auto;
 }
 .box{
-    height: 19vmin ;
+    height: 19vmin;
     width: 19vmin;
     background-color: #eeeff0;
     color: #490c0c;
-    font-size: 20vmin;
+    font-size: 19vmin;
     box-shadow: 0px 1px 2px black;
     border-radius: 15%;
 }
@@ -81,12 +81,12 @@ h2,h3{
     transition: 0.3s;
 }
 .btn{
-    height: 8vmin;
-    width: 23vmin;
+    height: 10vmin;
+    width: 30vmin;
     border: none;
     background: linear-gradient(#2a79cd,#670358);
     color: white;
-    font-size: 3vmin;
+    font-size: 4vmin;
     border-radius: 0.3rem;
     font-weight: 600;
 }
@@ -104,7 +104,7 @@ h2,h3{
 }
 .game_button{
     display: flex;
-    gap: 2vmin;
+    gap: 3vmin;
 }
 .w{
     transform: scale(1.03);
@@ -114,4 +114,30 @@ h2,h3{
 .footer{
     position: fixed;
     bottom: 0px;
+}
+@media (max-width:600px)
+{
+    .game_space{
+        gap: 5vmin;
+        max-width: 90vmin;
+        border: 2px solid black;
+        border-radius: 1%;
+    }
+    .game_area{
+        max-width: 80vmin;
+        gap: 3vmin;
+    }
+    .box{
+        font-size: 23vmin;
+        height: 25vmin;
+        width: 25vmin;
+    }
+    .btn{
+        width: 35vmin;
+        height: 15vmin;
+        font-size: 5vmin;
+    }
+    .game_button{
+        gap: 4vmin;
+    }
 }
